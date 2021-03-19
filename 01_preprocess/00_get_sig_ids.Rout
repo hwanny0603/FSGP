@@ -1,0 +1,34 @@
+
+R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> raw <- read.delim("/storage/home/sehwanahn/FSGP/L1000_phase2/GSE70138_Broad_LINCS_sig_info_2017-03-06.txt",sep="\t",header=T,stringsAsFactors=F)
+> cells <- read.delim("/storage/home/sehwanahn/FSGP/research_phase2/etc/cell_id.txt",sep="\t",header=,F,stringsAsFactors=F)
+> perts <- read.delim("/storage/home/sehwanahn/FSGP/research_phase2/etc/activator.txt",sep="\t",header=F,stringsAsFactors=F)
+> 
+> raw <- subset(raw,pert_type=="trt_cp")
+> 
+> idx <- which(raw$pert_iname %in% perts$V2 & raw$cell_id %in% cells$V1)
+> raw <- raw[idx,]
+> write.table(raw,"/storage/home/sehwanahn/FSGP/research_phase2/etc/sig_ids_from_pert_name.txt",sep="\t",row.names=F,quote=F)
+> 
+> 
+> quit("no")
+> proc.time()
+   user  system elapsed 
+  5.673   6.607   0.847 

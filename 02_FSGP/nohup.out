@@ -1,0 +1,110 @@
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "01_GA_multi.py", line 144, in read_data
+    result = GA(pattern)
+  File "01_GA_multi.py", line 107, in GA
+    for i in range(no_mating):
+TypeError: 'float' object cannot be interpreted as an integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "01_GA_multi.py", line 207, in <module>
+    main()
+  File "01_GA_multi.py", line 201, in main
+    job.get()
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+TypeError: 'float' object cannot be interpreted as an integer
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "01_GA_multi.py", line 144, in read_data
+    result = GA(pattern)
+  File "01_GA_multi.py", line 107, in GA
+    for i in range(0,no_mating):
+TypeError: 'float' object cannot be interpreted as an integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "01_GA_multi.py", line 207, in <module>
+    main()
+  File "01_GA_multi.py", line 201, in main
+    job.get()
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+TypeError: 'float' object cannot be interpreted as an integer
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "01_GA_multi.py", line 144, in read_data
+    result = GA(pattern)
+  File "01_GA_multi.py", line 107, in GA
+    for i in range(0,(no_generation - len(newPopul))/2):
+TypeError: 'float' object cannot be interpreted as an integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "01_GA_multi.py", line 206, in <module>
+    main()
+  File "01_GA_multi.py", line 200, in main
+    job.get()
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+TypeError: 'float' object cannot be interpreted as an integer
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "01_GA_multi.py", line 144, in read_data
+    result = GA(pattern)
+  File "01_GA_multi.py", line 107, in GA
+    for i in range(0,(no_generation - len(newPopul))/2):
+TypeError: 'float' object cannot be interpreted as an integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "01_GA_multi.py", line 206, in <module>
+    main()
+  File "01_GA_multi.py", line 200, in main
+    job.get()
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+TypeError: 'float' object cannot be interpreted as an integer
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "01_GA_multi.py", line 144, in read_data
+    result = GA(pattern)
+  File "01_GA_multi.py", line 107, in GA
+    for i in range(no_mating):
+TypeError: 'float' object cannot be interpreted as an integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "01_GA_multi.py", line 207, in <module>
+    main()
+  File "01_GA_multi.py", line 201, in main
+    job.get()
+  File "/storage/home/sehwanahn/miniconda2/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+TypeError: 'float' object cannot be interpreted as an integer
